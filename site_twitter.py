@@ -5,6 +5,7 @@ import numpy as np
 from textblob import TextBlob
 from matplotlib import pyplot as plt
 import seaborn as sns
+from tweepy import Cursor,OAuthHandler
 
 # For using twitter api, below i used essential information of my app.
 key="key"
@@ -21,7 +22,7 @@ names=['bbc','nhk','trt','cnn','foxnews','dw','aj','fr24','rt','cgtn']
 accounts = accounts + names
 tw=pd.DataFrame()
 lists=[bbc,nhk,trt,cnn,foxnews,dw,aj,fr24,rt,cgtn]
-accounts= accounts	+ lists
+accounts = accounts + lists
 
 # Here, I requested for tweets by qursor object and recieved necessary information, number of favorites, retweets and texts of specific tweets
 # This code may not work well since so many queries
