@@ -6,6 +6,7 @@ from textblob import TextBlob
 from matplotlib import pyplot as plt
 import seaborn as sns
 from tweepy import Cursor,OAuthHandler
+import re
 
 # For using twitter api, below i used essential information of my app.
 key="key"
